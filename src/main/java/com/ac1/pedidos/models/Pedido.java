@@ -1,7 +1,5 @@
 package com.ac1.pedidos.models;
 
-import java.util.Date;
-
 public class Pedido {
     
     private long codigo;
@@ -12,7 +10,7 @@ public class Pedido {
 
     private String cliente;
 
-    private Date dataDoPedido;
+    private String dataDoPedido;
 
     public long getCodigo() {
         return codigo;
@@ -46,11 +44,12 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public Date getDataDoPedido() {
+    public String getDataDoPedido() {
         return dataDoPedido;
     }
 
-    public void setDataDoPedido(Date dataDoPedido) {
+    public void setDataDoPedido(String dataDoPedido) {
         this.dataDoPedido = dataDoPedido;
     }
+
 }
